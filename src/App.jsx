@@ -13,7 +13,7 @@ export default function App() {
     <Router>
       <Navbar classname="sticky" />
       <Routes>
-        <Route path='/my-portfolio' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/experience' element={<Experience />} />
         <Route path='/projects' element={<Projects />} />
