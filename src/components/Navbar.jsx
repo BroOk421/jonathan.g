@@ -47,7 +47,7 @@ export default function Navbar() {
     </div>
       <nav className='flex gap-2 items-center' >
         <nav className='min-w-80 flex justify-between z-10 gap-9 max-md:hidden items-center pl-3 pr-3'>
-        <Link to="/my-portfolio" className={`Link font-poppins ${location.pathname === '/' ? 'active' : ''}`}>Home</Link>
+        <Link to="/my-portfolio" className={`Link font-poppins ${location.pathname === '/my-portfolio' ? 'active' : ''}`}>Home</Link>
         <Link to="/about" className={`Link font-poppins ${location.pathname === '/about' ? 'active' : ''}`} >About</Link>
         <Link to="/experience" className={`Link font-poppins ${location.pathname === '/experience' ? 'active' : ''}`}>Experience</Link>
         <Link to="/projects" className={`Link font-poppins ${location.pathname === '/projects' ? 'active' : ''}`}>Projects</Link>
