@@ -1,0 +1,22 @@
+.vertical-line {
+    animation: animate 2s forwards;
+}
+
+.outer-circle{
+    box-shadow: 0px 0px 30px 3px dimgray;
+}
+
+
+@keyframes animate {
+    from{
+        height: 0;
+    }
+    to {
+        height: 100vh;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+

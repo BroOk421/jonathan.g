@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+.burger {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.logo, .Link {
+    will-change: filter;
+    transition: filter 300ms;
+  }
+
+.Link {
+    text-decoration: none;
+    position: relative;
+    transition: color 0.5s ease;
+  }
+
+.Link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: goldenrod;
+    transition: width 0.3s ease;
+  }
+
+.Link:hover::after,
+.Link.active::after {
+    width: 100%;
+  }
+.Link:hover,
+.Link.active {
+    color: goldenrod;
+  }
+
+
+@media screen and (max-width: 767px) {
+    .burger {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        display: block;
+    }
+    .mobile-menu {
+        display: block;
+        display: flex;
+        z-index: 1;
+    }
+    .left {
+        position: absolute;
+        background-color: black;
+        width: 25px;
+        height: 3px;
+        border-radius: 10px;
+        top: 9px;
+        left: 8px;
+    }
+    
+    .center {
+        position: absolute;
+        background-color: black;
+        width: 25px;
+        height: 3px;
+        border-radius: 10px;
+        top: 17px;
+        left: 8px;
+    }
+    
+    .right {
+        position: absolute;
+        background-color: black;
+        width: 25px;
+        height: 3px;
+        border-radius: 10px;
+        bottom: 13px;
+        left: 8px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .logo {
+        display: none;
+    }
+}
