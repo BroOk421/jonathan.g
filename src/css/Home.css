@@ -1,0 +1,242 @@
+/* html, body {
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
+   */
+.hi-h {
+    animation: rightAnimate 2s ease-in-out forwards;
+}
+
+
+.hi-i {
+    animation: leftAnimate 4s ease-in-out forwards; 
+}
+
+@keyframes rightAnimate {
+    0% {
+        transform: translateX(-100px);
+    }
+    50% {
+        transform:  translateX(0px);
+    }
+}
+
+@keyframes leftAnimate {
+    0% {
+        transform: translateX(500px);
+    }
+    50% {
+        transform:  translateX(0px);
+    }
+}
+
+
+
+/***********************************************/
+
+.im-m {
+    animation: bounceLang 4s infinite;
+    animation-delay: 2.2s;
+}
+
+.im-i {
+    animation: bounceLang 4s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes bounceLang {
+    0%, 20% {
+        transform: translateY(0); /* Start at original position */
+      }
+      50% {
+        transform: translateY(-20px); /* Bounce up */
+      }
+    70%, 100% {
+        transform: translateY(0); /* Return and hold at original position */
+      } 
+}
+
+
+/***********************************************/
+
+.j {
+    animation: moveDown 2s ease-in-out forwards;
+    margin-top: -250px;
+}
+
+.n {
+    animation: moveDown 2.5s ease-in-out forwards;
+    margin-top: -250px;
+}
+
+.t {
+    animation: moveUp 2s ease-in-out forwards;
+}
+
+.j-o {
+    animation: bounceA .5s linear forwards;
+    animation-delay: 2.5s;
+}
+.j-n {
+    animation: bounceA .5s linear forwards;
+    animation-delay: 2.7s;
+}
+.j-a {
+    animation: bounceA .5s linear forwards;
+    animation-delay: 3s;
+}
+
+.j-h {
+    animation: bounceA .5s linear forwards;
+    animation-delay: 3.3s;
+}
+
+.j-aa {
+    animation: bounceA .5s linear forwards;
+    animation-delay: 3.6s;
+}
+
+
+
+@keyframes moveDown {
+    0%{
+        margin-top: -250px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
+
+@keyframes moveUp {
+    0%{
+        margin-bottom: -250px;
+    }
+    100% {
+        margin-bottom: 0px;
+    }
+}
+
+@keyframes bounceA {
+    0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-40px);
+      }
+    
+}
+
+
+/***********************************************/
+
+
+.line {
+    animation: lineSlide 2s, ease-in-out forwards;
+}
+
+@keyframes lineSlide {
+    0%{
+        transform: translateX(380px);
+    }
+    50%{
+        transform: translateX(380px);
+    }
+}
+
+/***********************************************/
+
+.web-developer {
+
+    animation: developerDown 2s ease-in-out forwards;
+    animation-delay: 3.5s;
+    margin-top: -150px;
+
+}
+
+@keyframes developerDown {
+    0% {
+        margin-top: -150px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
+
+/***********************************************/
+
+.div-click {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    animation: fadeInDelay 10s forwards;
+}
+
+.Social {
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
+    animation: fadeInDelay 10s forwards;
+}
+
+.Show {
+    display: flex;
+    opacity: 1;
+    animation: fadeInDelay 10s forwards;
+}
+
+.Hide {
+    display: none;
+    opacity: 0;
+}
+
+.click {
+    animation: bounceLangs 7s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes fadeInDelay {
+    0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }    
+}
+
+@keyframes bounceLangs {
+    0%, 100% {
+        transform: translateY(10px);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    
+}
+
+/***********************************************/
+
+.div-ImCross, .div-FaSquare, .div-FaCircle, .div-Triangle {
+    opacity: 0;
+    animation: fadeInDelay 10s forwards;
+}
+
+.rotateCounter {
+    animation: spin 25s linear infinite;
+}
+
+.rotate {
+    animation: spins 25s linear infinite;
+}
+
+@keyframes spin {
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+@keyframes spins {
+    to {
+      transform: rotate(360deg);
+    }
+  }
