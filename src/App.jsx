@@ -10,10 +10,10 @@ import Contact from './pages/Contacts.jsx'
 export default function App() {
 
   return (
-    <Router>
+    <Router basename='/my-portfolio'>
       <Navbar classname="sticky" />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/landing' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/experience' element={<Experience />} />
         <Route path='/projects' element={<Projects />} />
