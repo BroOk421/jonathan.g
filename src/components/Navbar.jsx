@@ -39,7 +39,7 @@ export default function Navbar() {
   return (
     <div className={`nav-mother w-full h-20 flex justify-between border-none p-4 items-center ${isVisible ? 'opacity-100 animate-fade-in' : 'opacity-0'}`}>
       <div className="flex justify-center items-center min-h-screen">
-      <Link to="/my-portfolio" className="z-10 flex group relative">
+      <Link to="/" className="z-10 flex group relative">
         <div className={`w-16 h-16 flex justify-center items-center ${isActive ? 'opacity-0' : 'opacity-100'}`}>
           <img src={Logo} className="logo w-12 h-10 cursor-pointer" alt="Logo" />
         </div>
@@ -47,7 +47,7 @@ export default function Navbar() {
     </div>
       <nav className='flex gap-2 items-center' >
         <nav className='min-w-80 flex justify-between z-10 gap-9 max-md:hidden items-center pl-3 pr-3'>
-        <Link to="/landing" className={`Link font-poppins ${location.pathname === '/landing' ? 'active' : ''}`}>Home</Link>
+        <Link to="/" className={`Link font-poppins ${location.pathname === '/landing' ? 'active' : ''}`}>Home</Link>
         <Link to="/about" className={`Link font-poppins ${location.pathname === '/about' ? 'active' : ''}`} >About</Link>
         <Link to="/experience" className={`Link font-poppins ${location.pathname === '/experience' ? 'active' : ''}`}>Experience</Link>
         <Link to="/projects" className={`Link font-poppins ${location.pathname === '/projects' ? 'active' : ''}`}>Projects</Link>
@@ -55,7 +55,7 @@ export default function Navbar() {
       </nav>
 
       { isMobileView && ( <div className={`mobile-menu absolute left-0 flex flex-col items-center p-16 pt-20 w-full gap-5 z-30 h-[330px] bg-slate-50 top-[-20px] opacity-0 duration-500 ${isActive ? 'opacity-100 duration-500' : 'opacity-0 top-[-420px]' }`}>
-        <Link onClick={closeMenu} to="/landing" className='Link font-poppins  hover:text-neutral-600 duration-300'>Home</Link>
+        <Link onClick={closeMenu} to="/" className='Link font-poppins  hover:text-neutral-600 duration-300'>Home</Link>
         <Link onClick={closeMenu} to="/about" className='Link font-poppins hover:text-neutral-600 duration-300' >About</Link>
         <Link onClick={closeMenu} to="/experience" className='Link font-poppins hover:text-neutral-600 duration-300' >Experience</Link>
         <Link onClick={closeMenu} to="/projects" className='Link font-poppins hover:text-neutral-600 duration-300'>Projects</Link>
