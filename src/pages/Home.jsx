@@ -6,7 +6,7 @@ export default function Home() {
 
   return (
     <div className='main relative w-full overflow-hidden mt-[-80px]'>
-      <div id="home" className="home-mother relative flex flex-col items-center justify-center w-full h-[100vh] gap-2">
+      <div className="home-mother relative flex flex-col items-center justify-center w-full h-[100vh] gap-2">
         <Shapes />
         <div className="flex w-[500px] items-center h-[90px] mr-[230px] max-md:w-[170px] max-md:h-[55px] overflow-hidden">
           <p className="hi-h text-black font-bold text-[100px] max-md:text-[60px]" style={{WebkitTextStroke: '3px black', color: 'transparent'}}>H</p>

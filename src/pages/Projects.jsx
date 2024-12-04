@@ -15,21 +15,21 @@ export default function Projects() {
     website: "website",
     url: "https://themaiguys.bubbleapps.io/version-test/landing?",
     img: themAIguy,
-    technologies: "AI, Bubble.io, UX",
+    description: "This website is ai website like chatgpt you can ask what you need etc. it have a banch of features on this website",
     tech: [Bubble, Javascript],
   },{
     name: "StudentReview",
     website: "website",
     url: "https://studentreviewapp.io/version-test/login?",
     img: StudentReview,
-    technologies: "Reviews, Educational Tools",
+    description: "Student Review platform for student that can they use it for making easily copy paste the text and drop and drag features",
     tech: [Bubble],
   }, {
     name: "ShopShopping",
     website: "website",
     url: "https://shopshopping.bubbleapps.io/version-test/user_shop?",
     img: ShopShopping,
-    technologies: "E-commerce, Bubble.io",
+    description: "Shopshopping is a website for e-commerce you can add more products and sell and make a payment using stripe",
     tech: [Bubble],
   }])
 
@@ -45,17 +45,17 @@ export default function Projects() {
       <div className="flex flex-col w-full h-auto p-[10px] justify-center items-center z-10">
         <div className='flex h-auto w-[91%] gap-[40px] p-[20px] justify-start items-center flex-wrap max-lg:justify-center'>
             { items.map((item, index) => (<div key={index}>
-              <div className=' flex flex-col h-auto w-[435px] justify-start pt-[20px] pb-[20px] pr-[10px] pl-[10px] gap-[10px] max-xl:w-[300px] bg-gray-200 rounded-md'>
+              <div className=' flex flex-col h-[450px] w-[400px] justify-start pt-[20px] pb-[20px] pr-[10px] pl-[10px] gap-[10px] max-xl:w-[300px] bg-gray-200 rounded-md'>
                 <img src={item.img} className='flex h-[230px] w-full' />
                 <div className='flex justify-between'>
                   <h1 className='text-[20px] font-medium font-poppins'>{item.name}</h1>
                   <a href={item.url} target="_blank" className="inline-block underline text-blue-500 hover:text-blue-800 px-4 py- rounded transition-colors duration-200"
-                  >URL Link</a>        
+                  >More Info</a>        
                 </div>
                 <div className='flex gap-[10px]'>
                   {item.tech.map((techIcon, techIndex) => (<img key={techIndex} src={techIcon} alt={`Technology ${techIndex}`} className="h-[30px] w-[30px]"/>))}
                 </div>
-                <p>Description: {item.technologies}</p>
+                <p>Description: {item.description}</p>
               </div>
             </div>)) }
         </div>

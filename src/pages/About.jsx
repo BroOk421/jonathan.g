@@ -4,7 +4,7 @@ import img from '/formal_pic.jpg'
 import Geometry from '../components/Geometry'
 
 import { IoLogoJavascript } from "react-icons/io";
-import { SiAdobephotoshop, SiCanva, SiAdobepremierepro } from "react-icons/si";
+import { SiAdobephotoshop, SiCanva, SiAdobepremierepro, SiTypescript } from "react-icons/si";
 
 export default function About() {
 
@@ -49,6 +49,7 @@ export default function About() {
                   <SiAdobephotoshop className="w-[35px] h-[35px] pl-1" />
                   <SiAdobepremierepro className="w-[35px] h-[35px] pl-1" />
                   <SiCanva className="w-[35px] h-[35px]" />
+                  <SiTypescript className="w-[33px] h-[33px]" />
                 </div>
                </div>
             </div>
