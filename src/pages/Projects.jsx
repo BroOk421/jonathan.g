@@ -3,8 +3,8 @@ import { useState } from 'react'
 import ShopShopping from '../assets/ShopShopping.png'
 import StudentReview from '../assets/StudentReview.png'
 import themAIguy from '../assets/themAIguy.png'
-import Bubble from '../assets/Bubble.png'
-import Javascript from '../assets/Javascript.png'
+import Bubble from '../assets/bubble.png'
+import Javascript from '../assets/JavaScript.png'
 import '../css/Projects.css'
 
 
