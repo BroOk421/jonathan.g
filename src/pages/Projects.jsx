@@ -45,10 +45,10 @@ export default function Projects() {
       <div className="flex flex-col w-full h-auto p-[10px] justify-center items-center z-10">
         <div className='flex h-auto w-[91%] gap-[40px] p-[20px] justify-start items-center flex-wrap max-lg:justify-center'>
             { items.map((item, index) => (<div key={index}>
-              <div className=' flex flex-col h-[450px] w-[400px] justify-start pt-[20px] pb-[20px] pr-[10px] pl-[10px] gap-[10px] max-xl:w-[300px] bg-gray-200 rounded-md'>
+              <div className=' flex flex-col h-[450px] w-[400px] justify-start pt-[20px] pb-[20px] pr-[10px] pl-[10px] gap-[10px] max-xl:w-[300px] shadow-gray-400 shadow-md bg-gray-50 rounded-md'>
                 <img src={item.img} className='flex h-[230px] w-full' />
                 <div className='flex justify-between'>
-                  <h1 className='text-[20px] font-medium font-poppins'>{item.name}</h1>
+                  <h1 className='text-[20px] font-bold font-poppins'>{item.name}</h1>
                   <a href={item.url} target="_blank" className="inline-block underline text-blue-500 hover:text-blue-800 px-4 py- rounded transition-colors duration-200"
                   >More Info</a>        
                 </div>

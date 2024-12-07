@@ -63,7 +63,7 @@ export default function Experience() {
 
           {/* ------------------------------------------------------------------------------------------------------------------------ */}
 
-          <div className="absolute flex w-[420px] h-auto top-[245px] left-[150px] rounded-md justify-center items-center bg-slate-100 p-[10px] opacity-0 max-xl:left-[-200px] max-sm:w-[370px] max-sm:left-[-185px] max-sm:top-[310px]" style={{opacity: fademid ? 1 : 0, transition: "opacity 1s ease"}}>
+          <div className="absolute flex w-[420px] h-auto top-[280px] left-[150px] rounded-md justify-center items-center bg-slate-100 p-[10px] opacity-0 max-xl:left-[-200px] max-sm:w-[370px] max-sm:left-[-185px] max-sm:top-[310px]" style={{opacity: fademid ? 1 : 0, transition: "opacity 1s ease"}}>
               <div className='absolute z-20 w-[150px] h-[4px] bg-slate-200 top-[130px] left-[-150px] max-xl:hidden'>
                 <div className='outer-circle relative w-[20px] h-[20px] rounded-full bg-slate-300 top-[-8px] left-[-8px]'>
                   <div className='inner-circle absolute w-[17px] h-[17px] bg-slate-400 rounded-full top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]'></div>

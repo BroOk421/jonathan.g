@@ -32,6 +32,9 @@ export default {
           '100%': { marginTop: '0px' },
         },
       },
+      boxShadow: {
+        'black-sm': '0px 0px 10px 1px black',
+      },
     },
   },
   plugins: [],
