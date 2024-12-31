@@ -12,7 +12,7 @@ export default {
         lg: '3px',
       },
       colors: {
-        lightgray: '#F0F0F0',
+        Clightgray: '#F0F0F0',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
